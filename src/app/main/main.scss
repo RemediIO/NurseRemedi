@@ -1,0 +1,17 @@
+.md-body-2{
+  color: #fff;
+}
+
+.creator-bot-webchat-iframe{
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+md-sidenav, 
+md-sidenav.md-locked-open, 
+md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 400px !important;
+    width: 85vw !important;
+    max-width: 800px !important;
+} 
