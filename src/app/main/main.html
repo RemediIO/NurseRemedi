@@ -1,44 +1,46 @@
 <md-toolbar layout="row" layout-align="center center">
+    <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Remedi" style="height: 48px; padding-left: 16px;">
 
-
-    <h3 style="padding-left: 16px;">Remedi</h3>
+    <h3 style="padding-left: 16px;">
+       
+        Remedi
+        </h3>
 
     <section flex layout="row" layout-align="left center">
 
     </section>
 
-    <md-button class="md-raised md-accent" ng-click="main.toggleSidenav()">Ask</md-button>
+    <md-button class="md-raised md-accent" ng-click="main.toggleSidenav()">Try Me</md-button>
 
 </md-toolbar>
-
 
 <md-content>
 
     <div class="main-demo" layout="row" layout-align="center center">
 
         <div flex>
+
             <md-list>
                 <md-list-item class="md-2-line">
                     <img ng-src="assets/images/profile/nurse.jpg" class="md-avatar" alt="Remedi">
                     <div class="md-list-item-text">
-                        <malarkey-tags ng-hide="main.isOpenRight()" tags="['Whats my next appointment?', 'Do any of my patients have alerts?', 'Her temp was 105.', 'Who has next shift?']">
+                        <malarkey-tags ng-hide="main.isOpenRight()" tags="['The patient has a temperature of 105!', 'Do any of my patients have alerts?', 'Her pulse is 120.', 'Who has next shift?']">
                         </malarkey-tags>
+                        <rendered-particles></rendered-particles>
+
                     </div>
                 </md-list-item>
             </md-list>
+
         </div>
 
-
-
     </div>
-
-    <rendered-particles></rendered-particles>
-
 
     <div class="realtime-care-coordination" layout-gt-md="row" layout="column">
 
         <md-list flex>
-            <md-subheader class="md-no-sticky">Realtime Care Coordination</md-subheader>
+            <md-subheader class="md-no-sticky">
+                <h2>Realtime Care Coordination</h2></md-subheader>
             <md-list-item class="md-2-line">
                 <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Remedi">
                 <div class="md-list-item-text">
@@ -67,7 +69,8 @@
         </md-list>
 
         <md-list flex>
-            <md-subheader class="md-no-sticky">Intelligent Data Entry</md-subheader>
+            <md-subheader class="md-no-sticky">
+                <h2>Intelligent Data Entry</h2></md-subheader>
 
             <md-list-item class="md-2-line">
                 <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Nurse Remedi">
@@ -97,7 +100,8 @@
 
         <md-list flex>
 
-            <md-subheader class="md-no-sticky">Medication Adherence</md-subheader>
+            <md-subheader class="md-no-sticky">
+                <h2>Medication Adherence</h2></md-subheader>
 
             <md-list-item class="md-2-line">
                 <img ng-src="assets/images/profile/nurse.jpg" class="md-avatar" alt="Nurse Remedi">
@@ -114,15 +118,23 @@
                     <p>She has an open order <a href="#">#117495</a>, for Diabetes Health Formula 500 mcg-250 mcg tablet.</p>
                 </div>
             </md-list-item>
-
         </md-list>
 
     </div>
 
+    <div style="padding: 16px;">
+        <h3>Leveraging LUIS, the same natural language comprension that powers Microsoft's Cortana</h3>
+        <img ng-src="assets/images/luis.png" class="md-avatar" alt="Remedi" style="width: 90%; padding-left: 16px;">
+    </div>
+
+    <div style="padding: 16px;">
+        <h3>Learn More</h3>
+        <md-button class="md-raised md-accent" href="https://docs.google.com/presentation/d/11cFRrOW4mmyeDQs9ARzpu-dhHz8LEBfF7kMrnF6NLLI/pub?start=false&loop=false&delayms=3000">Pitch Deck</md-button>
+        <md-button class="md-raised md-accent" href="https://github.com/RemediIO/NurseRemedi">App Source</md-button>
+        <md-button class="md-raised md-accent" href="https://github.com/RemediIO/NurseBot">Bot Source</md-button>
+    </div>
 
 </md-content>
-
-
 
 <section layout="row" flex>
     <md-sidenav class="md-sidenav-right" md-component-id="right">
