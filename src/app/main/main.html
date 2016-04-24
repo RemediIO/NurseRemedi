@@ -1,10 +1,9 @@
 <md-toolbar layout="row" layout-align="center center">
 
 
-    <h3 style="padding-left: 16px;">Nurse Remedi</h3>
+    <h3 style="padding-left: 16px;">Remedi</h3>
 
     <section flex layout="row" layout-align="left center">
-
 
     </section>
 
@@ -12,12 +11,117 @@
 
 </md-toolbar>
 
-<div style="position: absolute; top: 128px;">
-    <malarkey-tags ng-hide="main.isOpenRight()" tags="['MS Bot Builder', 'MS Azure', 'Github Pages']">
-    </malarkey-tags>
-</div>
 
-<rendered-particles></rendered-particles>
+<md-content>
+
+    <div class="main-demo" layout="row" layout-align="center center">
+
+        <div flex>
+            <md-list>
+                <md-list-item class="md-2-line">
+                    <img ng-src="assets/images/profile/nurse.jpg" class="md-avatar" alt="Remedi">
+                    <div class="md-list-item-text">
+                        <malarkey-tags ng-hide="main.isOpenRight()" tags="['Whats my next appointment?', 'Do any of my patients have alerts?', 'Her temp was 105.', 'Who has next shift?']">
+                        </malarkey-tags>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+
+
+
+    </div>
+
+    <rendered-particles></rendered-particles>
+
+
+    <div class="realtime-care-coordination" layout-gt-md="row" layout="column">
+
+        <md-list flex>
+            <md-subheader class="md-no-sticky">Realtime Care Coordination</md-subheader>
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Remedi">
+                <div class="md-list-item-text">
+                    <h3>Remedi</h3>
+                    <p>I see you are with Wojciech Zywno, Female, 56.</p>
+                    <p>Her last body tempature reading was 98 &#176;C. </p>
+                </div>
+            </md-list-item>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/nurse.jpg" class="md-avatar" alt="Nurse">
+                <div class="md-list-item-text">
+                    <h3>Nurse Betty</h3>
+                    <p>Are there notes for from last appointment?</p>
+                </div>
+            </md-list-item>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Remedi">
+                <div class="md-list-item-text">
+                    <h3>Remedi</h3>
+                    <p class="md-body-1">Nurse Cindy said: She is feeling much better on April 24th 2016 @ 2:23 PM.</p>
+                </div>
+            </md-list-item>
+
+        </md-list>
+
+        <md-list flex>
+            <md-subheader class="md-no-sticky">Intelligent Data Entry</md-subheader>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Nurse Remedi">
+                <div class="md-list-item-text">
+                    <h3>Remedi</h3>
+                    <p>What was the patient's temperature?</p>
+                </div>
+            </md-list-item>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/nurse.jpg" class="md-avatar" alt="Nurse Remedi">
+                <div class="md-list-item-text">
+                    <h3>Nurse Betty</h3>
+                    <p>99</p>
+                </div>
+            </md-list-item>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Nurse Remedi">
+                <div class="md-list-item-text md-warn">
+                    <h3>Remedi</h3>
+                    <p>Wojciech's' most recent temperature has caused an alert! It exceeds normal limits.</p>
+                </div>
+            </md-list-item>
+
+        </md-list>
+
+        <md-list flex>
+
+            <md-subheader class="md-no-sticky">Medication Adherence</md-subheader>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/nurse.jpg" class="md-avatar" alt="Nurse Remedi">
+                <div class="md-list-item-text">
+                    <h3>Nurse Betty</h3>
+                    <p>Does she have any current orders?</p>
+                </div>
+            </md-list-item>
+
+            <md-list-item class="md-2-line">
+                <img ng-src="assets/images/profile/robot.png" class="md-avatar" alt="Nurse Remedi">
+                <div class="md-list-item-text">
+                    <h3>Remedi</h3>
+                    <p>She has an open order <a href="#">#117495</a>, for Diabetes Health Formula 500 mcg-250 mcg tablet.</p>
+                </div>
+            </md-list-item>
+
+        </md-list>
+
+    </div>
+
+
+</md-content>
+
 
 
 <section layout="row" flex>
